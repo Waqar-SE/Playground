@@ -25,7 +25,7 @@ class Meal(models.Model):
         return self.name
 
     def get_absolute_url(self):
-        return reverse("core:meal-update",args=[self.id])
+        return reverse("core:meal-update", args=[self.id])
 
 
 class Ingredient(models.Model):
