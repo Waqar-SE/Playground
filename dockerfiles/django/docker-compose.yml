@@ -1,0 +1,32 @@
+version: "3.8"
+name: 'Django Playground'
+services:
+  django:
+    image: playground:latest
+    build:
+      context: ../../
+      dockerfile: dockerfiles/django/Dockerfile
+    container_name: django_app
+    environment:
+      - database_url=CHANGE_CODE_TO_USE_THIS_VALUE
+    command: bash start.sh
+    ports:
+      - 8000:8000
+    volumes:
+      - type: bind
+        source: ../../
+        target: /app
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:14.5-alpine
+    container_name: database
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=cloudviewer_dev
+    ports:
+      - 5432:5432
+    # Integrate Django-debug-toolbar 
+
