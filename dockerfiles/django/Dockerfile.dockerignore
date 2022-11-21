@@ -1,6 +1,0 @@
-celery_workers/
-dockerfiles/
-files/
-notebooks/
-sh_scripts/
-db.sqlite3
