@@ -3,7 +3,7 @@
 {% block content %}
 <form action="{% url 'core:meal-create'  %}" method="POST">
     {% csrf_token %}
-    {{form.as_table}}
-    <button type="submit">Create</button>
+    {{form}}
+    <button type="submit" class="btn btn-success">Create</button>
 </form>
 {% endblock %}
