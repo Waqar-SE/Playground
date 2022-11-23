@@ -28,7 +28,7 @@ echo "Prints variable $PWD"
 echo "Should I exit ? Y/N"
 read Name
 if [ -z "$Name" ]
-then 
+then
 	exit
 else
 	echo "Got it"

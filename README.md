@@ -1,2 +1,2 @@
 # Playground
-This is just a playground for all my technologies. 
+This is just a playground for all my technologies.

@@ -7,7 +7,7 @@
     {% for meal in object_list %}
     <div class="card">
         <div class="card-body">
-            <a href="{% url 'core:meal-update' meal.id %}">{{meal}}</a> 
+            <a href="{% url 'core:meal-update' meal.id %}">{{meal}}</a>
             <a href="{% url 'core:meal-delete' meal.id %}" class="btn btn-danger">Delete</a>
         </div>
     </div>
