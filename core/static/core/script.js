@@ -63,4 +63,3 @@ $(document).ready(
 )
 
 $('#ingredients-add').on('click', create_ingredients)
-
